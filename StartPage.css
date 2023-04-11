@@ -1,0 +1,44 @@
+#StartCanvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    background-color: #57ad00;
+}
+#StartButton {
+    position: fixed;
+    z-index: 99;
+    background-color:  #57ad00;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    left: 480px;
+    top: 250px;
+}
+#StartButtonSkip {
+    position: fixed;
+    z-index: 99;
+    background-color:  #57ad00;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    left: 340px;
+    top: 400px;
+}
+#Credits {
+    position: fixed;
+    z-index: 99;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 30pt;
+    right: 0px;
+    bottom: 0px;
+}

@@ -1,0 +1,317 @@
+.hideNext { 
+    opacity: 0;
+    z-index: 99;
+    position: fixed;
+    right: 50px;
+    font-size: 30pt;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0); 
+    font-weight: bolder; 
+    font-family: Sono;
+    padding: 1px;
+    bottom: 25px;
+    border-radius: 25px;
+}
+.showNext {
+    opacity: 1;
+    z-index: 99;
+    position: fixed;
+    right: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0); 
+    font-weight: bolder; 
+    font-family: Sono;
+    padding: 1px;
+    bottom: 25px;
+    font-size: 30pt;
+    border-radius: 25px;
+}
+
+.Closed{
+    background: none ;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.Open{
+    background-image:url(Pictures/Backpack);
+    margin-right: auto;
+    margin-left: auto;
+    display: block;  
+}
+#location{
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-size: 29.0pt;
+}
+span{
+    vertical-align: sub;
+}
+#Backpack{
+    border-radius: 25px;
+    font-size: 25pt; 
+    background-color: rgb(87, 173, 0); 
+    font-weight: bolder; 
+    font-family: Sono;
+    padding: 1px;
+    left: auto;
+    bottom: auto;
+    z-index: 97;
+}
+
+.Hide{
+    visibility: hidden;
+}
+.Show {
+    visibility: visible;
+}
+
+
+
+.SettingsS {
+    visibility: visible;
+    z-index: 98;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+}
+.SettingsH {
+    visibility: hidden;
+    z-index: 98;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+}
+.NotReady {
+    position: fixed;
+    z-index: 99;
+    background-color:  rgb(126, 126, 126);
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    left: 520px;
+    bottom: 100px;
+}
+.Ready {
+    visibility: visible;
+    z-index: 98;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    background-color: #57ad00;
+}
+.SelectedD {
+    position: fixed;
+    z-index: 99;
+    background-color:  rgb(126, 126, 126);
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    left: 400px;
+}
+.HBoy {
+    visibility: hidden;
+    z-index: 99;
+    left: 10px;
+    bottom: auto;
+}
+.BoyS {
+    background-color:  rgb(0, 146, 250);
+    visibility: visible;
+    z-index: 99;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+}
+.HGirl {
+    visibility: hidden;
+    z-index: 99;
+    left: 10px;
+    bottom: auto;
+}
+.GirlS {
+   visibility: visible;
+    z-index: 99;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    background-color:  rgb(255, 0, 179);
+    left: 50px;
+}
+
+
+.Enter {
+    z-index: 99;
+    position: fixed;
+    left: 245px;
+    bottom: 325px;
+    text-align: center;
+    background-color: white;
+}
+.disabled {
+    background-color: rgb(126, 126, 126);
+    text-align: center;
+    visibility: visible;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+}
+.None {
+    visibility: hidden;
+    position: fixed;
+    opacity: 1;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    left: 15px;
+    bottom: 15px;
+    z-index: 98;
+    background-color: black;
+}
+
+#intro {
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    left: 15px;
+    bottom: 15px;
+}
+
+.girlIntro {
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    background-color:  rgb(255, 0, 179);
+    left: 15px;
+    bottom: 15px;
+}
+
+#Gender {
+    z-index: -100;
+    top: 0;
+    position: fixed;
+}
+#Tut {
+    z-index: -100;
+    top: 0;
+    position: fixed;
+}
+#Speed {
+    z-index: -100;
+    top: 0;
+    position: fixed;
+}
+#textNumber {
+    z-index: -100;
+    top: 0;
+    position: fixed;
+}
+#Background {
+    visibility: visible;
+    z-index: -10;
+    background-color: #57ad00;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.boyIntro {
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    background-color:  rgb(0, 146, 250);
+    left: 15px;
+    bottom: 15px;
+}
+#BoyHalf {
+    z-index: 99;
+    position: fixed;
+    left: 25px;
+    bottom: 20px;
+}
+#GirlHalf {
+    z-index: 99;
+    position: fixed;
+    left: 25px;
+    bottom: 20px;
+}
+#Proffesor {
+    z-index: 99;
+    position: fixed;
+    left: 30px;
+    bottom: 25px;
+}
+#IntroText {
+    z-index: 99;
+    position: fixed;
+    left: 250px;
+    bottom: 158px;
+    font-size: 30pt;
+    font-weight: 900;
+    white-space:pre;
+}
+#NameForIntro {
+    vertical-align: text-top;
+}
+.hideNext {
+    visibility: hidden;
+}
+
+.Proffesor {
+    visibility: visible;
+    position: fixed;
+    opacity: 1;
+    font-weight: bolder;
+    font-family: Sono;
+    border-radius: 25px;
+    border-width: 3px;
+    font-size: 50pt;
+    background-color:  rgb(19, 144, 0);
+    left: 15px;
+    bottom: 15px;
+}
+
+#IntroText.n {
+    z-index: 99;
+    position: fixed;
+    left: 250px;
+    bottom: 118px;
+    font-size: 30pt;
+    font-weight: 900;
+}
+#IntroProgress {
+    z-index: 99;
+    position: fixed;
+    left: 250px;
+    bottom: 18px;
+}

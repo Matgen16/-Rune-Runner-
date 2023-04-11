@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rune Runner</title> 
+    <link rel="icon" href="Pictures/Rune-Ground.png" type="ico" id="Favicon" onclick="FavClick()">
+    <link rel="stylesheet" href="CSS/Classes.css">
+    <link rel="stylesheet" href="CSS/StartPage.css">
+    <link rel="stylesheet" href="CSS/Setup.css">
+</head>
+
+<body style="font-family: Sono;">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+    </style>
+
+
+    <canvas id="StartCanvas" width="1365" height="767"  class="Show"></canvas>
+    <button id="StartButton" onclick="StartGame()" class="Show">-START-</button><br>
+    <button id="StartButtonSkip" onclick="StartNoTut()" class="Show">-SKIP TUTORIAL-</button><br>
+    <a href="Credits.html" id="Credits" target="new_page">Credits</a>
+   
+    <div id="SetupDiv" class="SettingsH">
+    <canvas id="SetupBackground" width="1365" height="767" class="Hide"></canvas>
+    <fieldset id="ScrollSpeed" class="Hide">
+    <input type="radio" id="SlowTextSpeed" class="Hide" onclick="Slow()" name="Speed" onmouseover="SlowHover()" onmouseleave="SlowNoHover()" >
+    <label for="SlowTextSpeed"class="Hide" onclick="Slow()" id="SlowLabel" onmouseover="SlowHover()" onmouseleave="SlowNoHover()">Slow Text</label>
+    <input type="radio" id="MediumTextSpeed" class="Hide" onclick="Medium()" name="Speed"onmouseover="MediumHover()" onmouseleave="MediumNoHover()">
+    <label for="MediumTextSpeed"class="Hide"onclick="Medium()" id="MediumLabel"onmouseover="MediumHover()" onmouseleave="MediumNoHover()">Medium Text</label>
+    <input type="radio" id="FastTextSpeed" class="Hide" onclick="Fast()" name="Speed" onmouseover="FastHover()" onmouseleave="FastNoHover()">
+    <label for="FastTextSpeed" class="Hide"onclick="Fast()" id="FastLabel" onmouseover="FastHover()" onmouseleave="FastNoHover()">Fast Text</label>
+    </fieldset>
+    <button id="Boy" onclick="Boy()" class="SettingsH">-BOY-</button>
+    <button id="Girl" onclick="Girl()" class="SettingsH">-GIRL-</button>    
+    <input id="WhatName" type="text" placeholder="Name" minlength="2" maxlength="20"  class="SettingsH" onkeypress="NameInput()">
+    <button id="difficulty" onclick="cycleDifficulty()" class="SettingsH">-DIFFICULTY-</button>
+    <button id="Submit" onclick="SetupDone()" class="SettingsH">-PLAY-</button>
+    </div>
+
+    <div>
+    <img src="Pictures/Heart.png" id="Heart" title="Heart">
+    <span style = "font-size: 29.0pt;" >HP:</span>
+    <span id="Health" style="font-size: 29.0pt;">100</span>    
+    <img src="Pictures/Blue Pearl.png" id="Pearl" title="Pearl">
+    <span style="font-size: 29.0pt;">MP:</span>
+    <span id="Magic" style="font-size: 29.0pt;">15</span>
+    <span style="font-size: 10pt; visibility: hidden;" >Welcome To Rune Runner</span>
+    <span id="location">-HOME-</span><br>
+    <canvas width="943"; height= "650"; style="background-color: rgb(255, 255, 255); " class="Closed" id="GameScreen"></canvas>
+    <button id="Backpack" onclick="BOpen()">-BACKPACK-</button> <br>
+    <audio src="Audio/Saddle.mp3" id="SaddleOpen"></audio>
+    <audio src="Audio/SaddleClose.mp3" id="SaddleClose"></audio>
+    </div>
+
+    <script src="JS/index.js"></script>
+    <script src="JS/index2.js"></script>
+    <script src="JS/Text.js"></script>
+
+    <canvas id="Intro" height="208px" width="1335px" class="None" onclick="Next()" onmouseover="showNext()" onmouseleave="hideNext()"></canvas>
+    <span id="IntroText" onmouseover="showNext()" onmouseleave="hideNext()"></span>
+    <progress max="266" value="0" id="IntroProgress" class="Hide"></progress>
+    <button id="Next" onclick="Next()" class="hideNext" onmouseover="showNext()" onmouseleave="hideNext()">-NEXT-</button>
+    <audio src="Audio/TextSound2.mp3" id="TextSound"></audio>
+
+    <canvas id="Background" width="5000px" height="5000px"></canvas>
+
+    <span id="Gender"> </span>
+    <span id="Tut"> </span>
+    <span id="Speed">100</span>
+    <span id="textNumber">1</span>
+    <img src="Pictures/Boy Sprite 2.png" id="BoyHalf" class="Hide">
+    <img src="Pictures/Girl Sprite 2.png" id="GirlHalf" class="Hide">
+    <img src="Pictures/Professor.png" id="Proffesor" class="Hide"onmouseover="showNext()" onmouseleave="hideNext()">
+</body>
+
+</html>

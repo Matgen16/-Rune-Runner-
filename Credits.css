@@ -1,0 +1,29 @@
+h1 {
+    font-size: 75pt;
+    font-family: Sono;
+    text-align: center;
+    z-index: 99;
+}
+h2 {
+    font-size: 50pt;
+    font-family: Sono;
+    text-align: center;
+    z-index: 99;
+}
+h4 {
+    font-size: 30pt;
+    font-family: "Itim", cursive;
+    text-align: center;
+    z-index: 99;
+}
+canvas {
+    background-color: #57ad00;
+    position: fixed;
+    z-index: -50;
+    top: 0;
+    left: 0;
+}
+#ScrollSpeed {
+    z-index: -99;
+    position: fixed;
+}
